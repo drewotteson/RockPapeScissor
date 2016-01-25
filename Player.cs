@@ -6,24 +6,14 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    class Player
+    public class Player
     {
-        static void Main(string[] args)
+        public string userInput;
+        public string GetUserInput()
         {
-            int userInput = 0;
-            for (int i = 0; i < 10; i++)
-            {
-                Random rnd = new Random();
-                int number = rnd.Next(1, 4);
-                Console.WriteLine("Enter 1 for rock, 2 for paper, 3 for scissors.");
-                userInput = Convert.ToInt32(Console.ReadLine());
-
-                Scissors scissors = new Scissors();
-                string stringer = scissors.ReturnWinner(userInput);
-                Console.WriteLine(stringer);
-                Console.Read();
-            }
-            
+            Console.WriteLine("Type: rock, paper, scissors, lizard, or spock.");
+            userInput = Console.ReadLine();
+            return userInput;
         }
     }
 }

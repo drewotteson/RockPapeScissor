@@ -6,38 +6,35 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public class Scissors
+    public class Lizard
     {
-        public Scissors()
+        public Lizard()
         {
 
         }
         public void PrintWinner(string userInput, string aiChoice)
         {
-            if (userInput == "scissor")
+            if (userInput == "lizard")
             {
                 Console.WriteLine("TIE");
             }
             else if (userInput == "rock")
             {
-                Console.WriteLine("rock crushes scissor, you win!");
+                Console.WriteLine("rock crushes lizard, you win!");
             }
             else if (userInput == "paper")
             {
-                Console.WriteLine("scissor cuts paper, you lose!");
+                Console.WriteLine("lizard eats paper, you lose!");
             }
-            else if (userInput == "lizard")
+            else if (userInput == "scissor")
             {
-                Console.WriteLine("scissor decapitates lizard, you lose!");
+                Console.WriteLine("scissor decapitates lizard, you win!");
             }
             else if (userInput == "spock")
             {
-                Console.WriteLine("spock crushes scissor, you win!");
+                Console.WriteLine("lizard poisons spock, you lose");
             }
         }
     }
+
 }
-    
-
-
-
